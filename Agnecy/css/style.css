@@ -1,0 +1,464 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-family: "Open Sans";
+}
+
+.container{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.cfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header{
+    background-color: #f6f2f2;
+}
+
+header .topHead{
+    background-color: #313030;
+}
+
+header .headerList{
+    background-color: #313030;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .headerList li{
+    display: inline-block;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+header .headerList a{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+header .headerList a:hover{
+    color: #ff2d2d;
+}
+
+header .botHeader{
+    display: table;
+    padding-top: 108px;
+    padding-bottom: 63px;
+}
+
+header .headerText{
+    width: 700px;
+    padding-right: 110px;
+    display: table-cell;
+}
+
+header .headerText span{
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+header .headerText p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #6f6d6d;
+    margin-top: 35px;
+}
+
+header .headerText button{
+    width: 230px;
+    height: 55px;
+    background-color: #ff2d2d;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 65px;
+}
+
+header .headerText button:hover{
+    border: 2px solid;
+    border-color: #ff2d2d;
+    background-color: #ffffff;
+    color: #ff2d2d;
+}
+
+header .headerMedia{
+    width: 550px;
+    height: 355px;
+    background-color: #c4c0b1;
+    display: table-cell;
+}
+
+.advantages{
+    padding-top: 115px;
+}
+
+.advantages .advanText{
+    width: 640px;
+    float: left;
+    padding-right: 89px;
+}
+
+.advantages .advanText span{
+    font-size: 42px;
+    line-height: 55px;
+    font-weight: bold;
+    color: #585858;
+    text-transform: uppercase;
+}
+
+.advantages .advanText button{
+    width: 230px;
+    height: 55px;
+    border: 2px solid;
+    border-color: #ff0000;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 18px;
+    line-height: 34px;
+    color: #ff2d2d;
+}
+
+.advantages .advanText button:hover{
+    background-color: #ff2d2d;
+    color: #ffffff;
+}
+
+.advantages .advanText button a{
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.advantages .advanText p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #000000 ;
+}
+
+.advantages .advDesc{
+    width: calc(100% - 640px);
+    float: left;
+    margin-bottom: 70px;
+}
+
+.advantages .advDesc .advAbout{
+    width: 50%;
+    float: left;
+    padding-left: 45px;
+}
+
+.advantages .advDesc .advAbout span+span{
+    margin-top: 25px;
+}
+
+.advantages .advDesc .advAbout .iconAdv{
+    font-size: 40px;
+    color: #ff4b59;
+}
+
+.advantages .advDesc span{
+    font-size: 24px;
+    font-weight: 600;
+    color: #585858;
+    display: block;
+}
+
+.advantages .advDesc p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #a0a0a0;
+}
+
+.projects{
+    padding-top: 70px;
+}
+
+.projects .projTitle h2{
+    font-size: 42px;
+    font-weight: bold;
+    color: #585858;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.projects .projTitle p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #a0a0a0;
+    text-align: center;
+}
+.projects .projMenu{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.projects .projMenu li{
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.projects .projMenu a{
+    text-decoration: none;
+    color: #585858;
+}
+
+.projects .projMenu a:hover{
+    color: #ff2d2d;
+}
+
+.projects .projMenu li+li{
+    margin-left: 55px;
+}
+
+.projects .projImages .projImg{
+    width: 290px;
+    height: 290px;
+    background-color: #f5f0dd;
+    float: left;
+    margin: 10px;
+}
+
+.thumbnail{
+    display: none;
+}
+
+.thumbnail .altImjs{
+    background-color: #ff2d2d;
+    width: 145px;
+    height: 145px;
+    float: left;
+}
+
+.thumbnail .test{
+    background-color: #dfc872;
+}
+
+.subscribe{
+    background-color: #f5f0dd;
+    margin-top: 105px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.subscribe h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: #585858;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subscribe p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #a0a0a0;
+    text-align: center;
+}
+
+.subscribe .subWrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.subscribe .subWrap input{
+    font-size: 16px;
+    color: #2c2c2c;
+    width: 520px;
+    height: 80px;
+    border: none;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    padding-left: 35px;
+}
+
+.subscribe .subWrap button{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 210px;
+    height: 80px;
+    border: none;
+    background-color: #ff2d2d;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 20px;
+}
+
+.subscribe .subWrap button:hover{
+    border: 2px solid;
+    border-color: #ff2d2d;
+    background-color: #ffffff;
+    color: #ff2d2d;
+}
+
+.getInTouch h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: #585858;
+    text-transform: uppercase;
+}
+
+.getInTouch p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #a0a0a0;
+}
+
+.getInTouch .getWrap{
+    width: 50%;
+    margin-bottom: 85px;
+}
+
+.feedback .formWrap{
+    width: 740px;
+    float: left;
+}
+
+.feedback .contacts{
+    float: left;
+}
+
+.feedback form .name, .mail {
+    width: 340px;
+    height: 65px;
+}
+
+.feedback form .mail{
+    margin-left: 46px;
+}
+
+.feedback form .message{
+    width: 730px;
+    height: 245px;
+    margin-top: 45px;
+}
+
+.feedback form input{
+    font-size: 18px;
+    color: #000000;
+    background-color: #e5e5e5;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding-left: 55px;
+}
+
+.feedback form button{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 730px;
+    height: 70px;
+    margin-top: 45px;
+    background-color: #ff2d2d;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.feedback form button:hover{
+    border: 2px solid;
+    border-color: #ff2d2d;
+    background-color: #ffffff;
+    color: #ff2d2d;
+}
+
+.feedback .contacts{
+    padding-left: 80px;
+    padding-top: 140px;
+}
+
+.feedback .contacts span{
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.feedback .contacts a{
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.feedback .contacts .contTitle{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.feedback .black{
+    background-color: #2d2d2d;
+    width: 570px;
+    height: 470px;
+    float: right;
+}
+
+footer{
+
+    background-color: #313030;
+    margin-top: 105px;
+}
+
+footer span{
+    font-size: 15px;
+    color: #b8b8b8;
+    float: left;
+    margin-top: 55px;
+}
+
+footer .footWrap a{
+    text-decoration: none;
+    font-size: 35px;
+    color: #ffffff;
+    float: right;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+}
+
+footer .footWrap a:hover{
+    color: #ff2d2d;;
+}
